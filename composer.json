@@ -1,0 +1,13 @@
+{
+    "name": "sapphirelabs/sakuraloader",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Allen Chang",
+            "email": "voxlol@outlook.com"
+        }
+    ],
+    "require": {
+        "jikan-me/jikan": "^1.15"
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e8cf69e3fc6683938edcdddf79ba9ccb",
+    "packages": [
+        {
+            "name": "jikan-me/jikan",
+            "version": "v1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jikan-me/jikan.git",
+                "reference": "aa866bf8470902736f596fc5e9102d91d8eb1a95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jikan-me/jikan/zipball/aa866bf8470902736f596fc5e9102d91d8eb1a95",
+                "reference": "aa866bf8470902736f596fc5e9102d91d8eb1a95",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jikan\\": [
+                        "src"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Irfan",
+                    "email": "irfan@jikan.me"
+                }
+            ],
+            "description": "Jikan is an unofficial MyAnimeList API",
+            "time": "2018-03-24T05:09:10+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
