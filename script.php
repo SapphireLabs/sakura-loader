@@ -2,19 +2,21 @@
 
 require_once 'vendor/autoload.php';
 
-$jikan = new Jikan\Jikan;
-// $anime = $jikan->Anime(1)->response;
+$seasons = ['fall', 'spring', 'summer', 'winter'];
 
-$season = $jikan->Seasonal('WINTER', '2018');
-$response = $season->response;
+function fetchAndStoreAnimesBySeason($seasonType, $year)
+{
+    $jikan = new Jikan\Jikan;
+    $animes = $jikan->Seasonal($seasonType, $year);
+    $response = $animes->response['season'] ?? "NO RESPONSE";
 
-// file_put_contents("./datalol.txt", json_encode($response));
+    file_put_contents("./data/$seasonType-$year.json", json_encode($response));
+    var_dump("WRITTEN $seasonType - $year");
+}
 
-// $gg = json_decode(file_get_contents("./datalol.txt"), true);
-// var_dump(array_keys($gg['season']));
-// var_dump($gg['season'][0]);
-
-# season
-// var_dump(get_class($response));
-// var_dump(count($response));
-// var_dump($season->response);
+for($year = 1970; $year < 2019; $year++) {
+    foreach($seasons as $season) {
+        fetchAndStoreAnimesBySeason($season, $year);
+        sleep(30);
+    }
+}
